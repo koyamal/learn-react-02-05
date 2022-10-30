@@ -1,13 +1,15 @@
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 import { SecondaryButton } from "../atoms/button/SecondaryButton";
 
 export const Top = () => {
+  const histroy = useHistory();
   const onClickAdmin = () => {
-    alert("Admin");
+    histroy.push({ pathname: "/users", state: { isAdmin: true } });
   };
   const onClickGeneral = () => {
-    alert("General");
+    histroy.push({ pathname: "/users", state: { isAdmin: false } });
   };
   return (
     <SContainer>
