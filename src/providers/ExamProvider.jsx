@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { CheckOrder2 } from "../checkOrder/CheckOrder2";
+import CheckOrder22 from "../checkOrder/CheckOrder2";
 
 export const ExamContext = createContext({});
 console.log("ExamProvider.jsx");
