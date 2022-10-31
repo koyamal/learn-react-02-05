@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
+import { CheckOrder } from "./checkOrder/CheckOrder";
+import CheckOrder2 from "./checkOrder/CheckOrder";
 
 import App from "./App";
 
